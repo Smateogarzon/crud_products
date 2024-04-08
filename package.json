@@ -10,7 +10,7 @@
     "reset": "rm -rf node_modules/ package-lock.json ./back/node_modules/ ./back/package-lock.json ./front/node_modules/ ./front/package-lock.json && npm run setup",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky",
-    "render:build": "npm run build --prefix ./back",
+    "render:build": "npm install && npm run build --prefix ./back",
     "render:start": "npm run start --prefix ./back"
   },
   "author": "",
